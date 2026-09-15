@@ -1,7 +1,7 @@
 package axi4_lite_pkgs;
 	`include "uvm_macros.svh"
 	import uvm_pkg::*;
-	`include "axi4_seq_item.sv"
+	`include "axi4_lite_seq_item.sv"
 	`include "axi4_lite_seqr.sv"
 	`include "axi4_lite_seq.sv"
 	`include "axi4_lite_driver.sv"

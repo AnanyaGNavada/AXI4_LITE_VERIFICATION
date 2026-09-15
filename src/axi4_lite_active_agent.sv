@@ -11,13 +11,13 @@ function void build_phase(uvm_phase phase);
 	inp_mon=axi4_lite_inp_monitor::type_id::create("inp_mon",this);
 	if(get_is_active==UVM_ACTIVE) begin
 		drv=axi4_lite_driver::type_id::create("drv",this);
-		seqr=ai4_lite_seqr::type_id::create("seqr",this);
+		seqr=axi4_lite_seqr::type_id::create("seqr",this);
 	end
 endfunction
 function void connect_phase(uvm_phase phase);
 	super.connect_phase(phase);
-	if(get_is_active==UVM_ACTIVE) begin
+	//if(get_is_active==UVM_ACTIVE) begin
 		drv.seq_item_port.connect(seqr.seq_item_export);
-	end
+	//end
 endfunction
 endclass

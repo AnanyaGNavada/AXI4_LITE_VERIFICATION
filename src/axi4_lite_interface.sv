@@ -7,20 +7,20 @@ interface axi4_lite_interface(input bit clk, rst);
 	logic [(`DATA_WIDTH/8)-1:0] WSTRB;
 
 	clocking drv_cb @(posedge clk);
-		default input #0 output #0;
+		default input #1 output #1;
 		output AWADDR, AWPROT, AWVALID, WDATA, WSTRB, WVALID, BREADY, ARADDR, ARPROT, ARVALID, RREADY;
-		input AWREADY, WREADY, BVALID, ARREADY;
+		input AWREADY, WREADY, BVALID, ARREADY, RVALID;
 	endclocking
 
 	clocking inp_mon_cb @(posedge clk);
-		default input #0 output #0;
-		input AWADDR, AWPROT, AWVALID, WDATA, WSTRB, WVALID, BREADY, ARADDR, ARPROT, ARVALID, RREADY;
-		input  AWREADY, WREADY, BVALID, ARREADY;
+		default input #1 output #1;
+		input AWADDR, AWPROT, AWVALID, WDATA, WSTRB, WVALID, BREADY, ARADDR, ARPROT, ARVALID;
+		input  AWREADY, WREADY,  ARREADY;
 	endclocking
 
 	clocking out_mon_cb @(posedge clk);
-		default input #0 output #0;
-		input  AWREADY, WREADY, BRESP, BVALID, ARREADY, RDATA, RRESP, RVALID;
+		default input #1 output #1;
+		input  AWREADY, AWVALID, WREADY, WVALID, BRESP, BVALID, BREADY, ARREADY, ARVALID, RDATA, RRESP, RVALID,RREADY;
 		
 	endclocking
 

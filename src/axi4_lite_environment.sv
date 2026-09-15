@@ -9,8 +9,8 @@ function new(string name= "axi4_lite_environment",uvm_component parent);
 endfunction
 function void build_phase(uvm_phase phase);
 	super.build_phase(phase);
-	uvm_config_db #(uvm_active_passive_enum) :: set(this,"aa", "is_active", UVM_ACTIVE)
-	uvm_config_db #(uvm_active_passive_enum) :: set(this,"pa", "is_active", UVM_PASSIVE)
+	//uvm_config_db #(uvm_active_passive_enum) :: set(this,"aa", "is_active", UVM_ACTIVE);
+	uvm_config_db #(uvm_active_passive_enum) :: set(this,"pa", "is_active", UVM_PASSIVE);
 	aa=axi4_lite_active_agent::type_id::create("aa",this);
 	pa=axi4_lite_passive_agent::type_id::create("pa",this);
 	scb=axi4_lite_scoreboard::type_id::create("scb",this);
@@ -18,8 +18,8 @@ function void build_phase(uvm_phase phase);
 endfunction
 function void connect_phase(uvm_phase phase);
 	super.connect_phase(phase);
-	aa.inp_mon.inp_mon_port.connect(scb.inp_port.analysis_export);
-	pa.out_mon.out_mon_port.connect(scb.out_port.analysis_export);
+	aa.inp_mon.inp_mon_port.connect(scb.inp_port);
+	pa.out_mon.out_mon_port.connect(scb.out_port);
 	aa.inp_mon.inp_mon_port.connect(sb.analysis_export);
 endfunction
 endclass

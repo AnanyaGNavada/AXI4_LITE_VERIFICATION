@@ -1,0 +1,16 @@
+QuestaSim vlog 10.6c Compiler 2017.07 Jul 25 2017
+Start time: 11:26:46 on Aug 31,2026
+vlog -sv "+acc" "+cover" "+fcover" -l log_file_name.log axi4_lite_top.sv 
+-- Compiling package axi4_lite_pkgs
+** Note: (vlog-2286) axi4_lite_pkgs.sv(2): Using implicit +incdir+/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling interface axi4_lite_interface
+-- Compiling module axi4_lite_slave
+-- Compiling module axi4_lite_top
+-- Importing package axi4_lite_pkgs
+** Error: axi4_lite_top.sv(18): The expression for a parameter actual associated with the parameter name ('DATA_WIDTH') for the module instance ('duv') must be constant.
+** Error: axi4_lite_top.sv(18): The expression for a parameter actual associated with the parameter name ('ADDR_WIDTH') for the module instance ('duv') must be constant.
+** Error: axi4_lite_top.sv(18): The expression for a parameter actual associated with the parameter name ('MEM_DEPTH') for the module instance ('duv') must be constant.
+** Error: axi4_lite_top.sv(18): The expression for a parameter actual associated with the parameter name ('DEFAULT_PROT') for the module instance ('duv') must be constant.
+End time: 11:26:46 on Aug 31,2026, Elapsed time: 0:00:00
+Errors: 4, Warnings: 0

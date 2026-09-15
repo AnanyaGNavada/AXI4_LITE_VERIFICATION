@@ -8,6 +8,9 @@ awaddr_cp : coverpoint sub.AWADDR {
 	 bins aw3 = {[32'h34:32'h38]};
 	 bins aw4 = {32'h3c};
 }
+  wstrb_cp:coverpoint sub.WSTRB{
+    bins strb[]={4'b0000,4'b0001,4'b0010,4'b0100,4'b1000,4'b0011,4'b1100,4'b1111}; 
+  }
 /*awready_cp : coverpoint sub.AWREADY {
 	bins awr_low={0};
 	bins awr_high ={1};
@@ -43,5 +46,6 @@ endfunction
 virtual function void write (axi4_lite_seq_item t);
 	sub=t;
 	axi4_lite_cg.sample();
+`uvm_info(get_name(),$sformatf("INPUT COVERAGE = %0.2f %%", axi4_lite_cg.get_coverage()),UVM_NONE) 
 endfunction
 endclass

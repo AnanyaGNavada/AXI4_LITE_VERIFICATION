@@ -1,0 +1,37 @@
+<session version="1.1" release="Q-2020.03-SP2-8" timestp="2026-09-14 05:37:59 GMT">
+  <info>
+    <attr name="datetime" value="Mon Sep 14 11:08:09 2026
+"/>
+    <attr name="command" value="urg -dir simv.vdb"/>
+    <attr name="top_instance" value="axi4_lite_top"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Cond" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Toggle" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Branch" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="131/134" />
+    <metric name="Cond" value="79/100" />
+    <metric name="Toggle" value="885/894" />
+    <metric name="FSM" value="7/10" />
+    <metric name="Branch" value="51/58" />
+    <metric name="Group" value="87.5%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="axi4_lite_pkgs::axi4_lite_subscriber::axi4_lite_cg">
+      <metric name="Group" value="87.5%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+  </scope>
+  </old_coverage>
+</session>
