@@ -105,7 +105,7 @@ global coverage_group 0 axi4_lite_pkgs::axi4_lite_subscriber::axi4_lite_cg __cov
  1 1 0 0 1 1 3 wd3 20 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_13 0 142 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_14 0 0 0 0 0
  0
 
- 9 araddr_cp 34 0 0 0 0 0 142 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_15 142 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_15 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 9 araddr_cp 27 0 0 0 0 0 142 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_15 142 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_15 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
  0
  0
  0
@@ -120,11 +120,11 @@ global coverage_group 0 axi4_lite_pkgs::axi4_lite_subscriber::axi4_lite_cg __cov
  0
  0
  0
- 3 1 1 0 0 1 1 3 ar1 35 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_0 0 141 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_1 0 0 0 0 0
+ 3 1 1 0 0 1 1 3 ar1 28 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_0 0 141 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_1 0 0 0 0 0
  0
- 1 1 0 0 1 1 3 ar2 36 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_2 0 141 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_3 0 0 0 0 0
+ 1 1 0 0 1 1 3 ar2 29 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_2 0 141 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_3 0 0 0 0 0
  0
- 1 1 0 0 1 1 3 ar3 37 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_4 0 141 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_5 0 0 0 0 0
+ 1 1 0 0 1 1 3 ar3 30 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_4 0 141 axi4_lite_pkgs_axi4_lite_subscriber_11_0::axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_pkgs_axi4_lite_subscriber_11_0_axi4_lite_cg_fn_5 0 0 0 0 0
  0
 
 end_coverage_group

@@ -150,6 +150,36 @@ class axi4_lite_test_simultaneous_read_write extends axi4_lite_test;
   endtask
 endclass
 
+class axi4_lite_test_addr_with_delay_data extends axi4_lite_test;
+  `uvm_component_utils(axi4_lite_test_addr_with_delay_data)
+  axi4_lite_seq_addr_with_delay_data seq;
+  function new(string name = "axi4_lite_test_addr_with_delay_data", uvm_component parent);
+    super.new(name, parent);
+  endfunction
+  task run_phase(uvm_phase phase);
+    phase.raise_objection(this);
+    seq = axi4_lite_seq_addr_with_delay_data::type_id::create("seq");
+    seq.start(env.aa.seqr);
+    `uvm_info("TEST", "Addr with data delay completed", UVM_NONE)
+    phase.drop_objection(this);
+  endtask
+endclass
+
+class axi4_lite_test_data_with_delay_addr extends axi4_lite_test;
+  `uvm_component_utils(axi4_lite_test_data_with_delay_addr)
+  axi4_lite_seq_data_with_delay_addr seq;
+  function new(string name = "axi4_lite_test_data_with_delay_addr", uvm_component parent);
+    super.new(name, parent);
+  endfunction
+  task run_phase(uvm_phase phase);
+    phase.raise_objection(this);
+    seq = axi4_lite_seq_data_with_delay_addr::type_id::create("seq");
+    seq.start(env.aa.seqr);
+    `uvm_info("TEST", "Data with addr delay completed", UVM_NONE)
+    phase.drop_objection(this);
+  endtask
+endclass
+
 class regression_test extends axi4_lite_test;
  `uvm_component_utils(regression_test)
  function new(string name ="regression_test",uvm_component parent);
@@ -165,6 +195,8 @@ axi4_lite_seq_read_wo seq4;
   axi4_lite_seq_write_decerr seq7;
   axi4_lite_seq_read_decerr seq8;
   axi4_lite_simultaneous_read_write seq9;
+  axi4_lite_seq_addr_with_delay_data seq10;
+  axi4_lite_seq_data_with_delay_addr seq11;
   phase.raise_objection(this);
   seq1 = axi4_lite_seq_write::type_id::create("seq1");
   seq1.start(env.aa.seqr);
@@ -193,6 +225,12 @@ axi4_lite_seq_read_wo seq4;
   seq9=axi4_lite_simultaneous_read_write::type_id::create("seq9");
   seq9.start(env.aa.seqr);
   $display("Simultaneous read write completed");
+   seq10=axi4_lite_seq_addr_with_delay_data::type_id::create("seq10");
+  seq10.start(env.aa.seqr);
+   $display( "Addr with data delay completed");
+     seq11 = axi4_lite_seq_data_with_delay_addr::type_id::create("seq11");
+     seq11.start(env.aa.seqr);
+   $display( "data with addr delay completed");
   phase.drop_objection(this);
   `uvm_info("TEST", "Testcases completed", UVM_NONE)
 endtask

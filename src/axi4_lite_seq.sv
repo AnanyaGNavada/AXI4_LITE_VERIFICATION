@@ -141,3 +141,35 @@ class axi4_lite_simultaneous_read_write extends uvm_sequence #(axi4_lite_seq_ite
     end
   endtask
 endclass
+
+class axi4_lite_seq_addr_with_delay_data extends uvm_sequence #(axi4_lite_seq_item);
+  `uvm_object_utils(axi4_lite_seq_addr_with_delay_data)
+  axi4_lite_seq_item req;
+  function new(string name = "axi4_lite_seq_addr_with_delay_data");
+	super.new(name);
+endfunction
+  task body();
+    repeat(100) begin
+    req=axi4_lite_seq_item::type_id::create("req");
+    start_item(req);
+      assert(req.randomize() with {write==1; read==0; AWADDR< 'h3C; d1==0; d2<5; d1!=d2; AWADDR[1:0]==0; ARADDR[1:0]==0;})
+    finish_item(req);
+    end
+  endtask
+endclass
+
+class axi4_lite_seq_data_with_delay_addr extends uvm_sequence #(axi4_lite_seq_item);
+  `uvm_object_utils(axi4_lite_seq_data_with_delay_addr)
+  axi4_lite_seq_item req;
+  function new(string name = "axi4_lite_seq_data_with_delay_addr");
+	super.new(name);
+endfunction
+  task body();
+    repeat(100) begin
+    req=axi4_lite_seq_item::type_id::create("req");
+    start_item(req);
+      assert(req.randomize() with {write==1; read==0; AWADDR< 'h3C; d1<5; d2==0; d1!=d2; AWADDR[1:0]==0; ARADDR[1:0]==0;})
+    finish_item(req);
+    end
+  endtask
+endclass

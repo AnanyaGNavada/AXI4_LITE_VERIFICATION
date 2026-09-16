@@ -1,6 +1,6 @@
-<session version="1.1" release="Q-2020.03-SP2-8" timestp="2026-09-16 05:04:40 GMT">
+<session version="1.1" release="Q-2020.03-SP2-8" timestp="2026-09-16 09:55:41 GMT">
   <info>
-    <attr name="datetime" value="Wed Sep 16 10:34:59 2026
+    <attr name="datetime" value="Wed Sep 16 15:26:02 2026
 "/>
     <attr name="command" value="urg -dir simv.vdb"/>
     <attr name="top_instance" value="axi4_lite_top"/>
@@ -19,7 +19,7 @@
   <scope type="top" name="top">
     <metric name="Line" value="131/134" />
     <metric name="Cond" value="79/100" />
-    <metric name="Toggle" value="885/894" />
+    <metric name="Toggle" value="888/894" />
     <metric name="FSM" value="7/10" />
     <metric name="Branch" value="51/58" />
     <metric name="Group" value="100%" />
