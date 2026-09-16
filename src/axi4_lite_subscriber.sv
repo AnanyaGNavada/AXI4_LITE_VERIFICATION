@@ -5,8 +5,7 @@ covergroup axi4_lite_cg;
 awaddr_cp : coverpoint sub.AWADDR {
 	bins aw1 ={[32'h0:32'h24]};
 	 bins aw2 = {[32'h28:32'h30]};
-	 bins aw3 = {[32'h34:32'h38]};
-	 bins aw4 = {32'h3c};
+	 bins aw3 = {[32'h34:32'h3C]};
 }
   wstrb_cp:coverpoint sub.WSTRB{
     bins strb[]={4'b0000,4'b0001,4'b0010,4'b0100,4'b1000,4'b0011,4'b1100,4'b1111}; 
@@ -35,8 +34,7 @@ rresp_cp : coverpoint sub.RRESP {
 araddr_cp :coverpoint sub.ARADDR {
 	bins ar1 ={[32'h0:32'h24]};
 	 bins ar2 = {[32'h28:32'h30]};
-	 bins ar3 = {[32'h34:32'h38]};
-	 bins ar4 = {32'h3c};
+	 bins ar3 = {[32'h34:32'h3C]};
 }
 endgroup
 function new(string name ="axi4_lite_subscriber", uvm_component parent);

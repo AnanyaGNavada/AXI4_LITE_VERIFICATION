@@ -1,6 +1,6 @@
-<session version="1.1" release="Q-2020.03-SP2-8" timestp="2026-09-14 05:37:59 GMT">
+<session version="1.1" release="Q-2020.03-SP2-8" timestp="2026-09-16 05:04:40 GMT">
   <info>
-    <attr name="datetime" value="Mon Sep 14 11:08:09 2026
+    <attr name="datetime" value="Wed Sep 16 10:34:59 2026
 "/>
     <attr name="command" value="urg -dir simv.vdb"/>
     <attr name="top_instance" value="axi4_lite_top"/>
@@ -22,13 +22,13 @@
     <metric name="Toggle" value="885/894" />
     <metric name="FSM" value="7/10" />
     <metric name="Branch" value="51/58" />
-    <metric name="Group" value="87.5%" />
+    <metric name="Group" value="100%" />
   </scope>
   <scope type="instance" name="top">
   </scope>
   <scope type="group" name="top">
     <scope type="group" name="axi4_lite_pkgs::axi4_lite_subscriber::axi4_lite_cg">
-      <metric name="Group" value="87.5%" />
+      <metric name="Group" value="100%" />
     </scope>
   </scope>
   <scope type="assert" name="Statistics">

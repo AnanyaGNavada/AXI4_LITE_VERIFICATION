@@ -27,5 +27,61 @@ interface axi4_lite_interface(input bit clk, rst);
 	modport drv (clocking drv_cb);
 	modport inp_mon (clocking inp_mon_cb);
 	modport out_mon (clocking out_mon_cb);
+	
+	property p1;
+	@(posedge clk) AWVALID && !AWREADY |=>$stable(AWADDR);
+	endproperty
+	assert property(p1)
+	else
+		$error("P1","Address not stable");
+		
+	property p2;
+	@(posedge clk) WVALID && !WREADY |=>$stable(WDATA);
+	endproperty
+	assert property(p2)
+	else
+		$error ("P2","Data not stable");
+	
+	/*property p3;
+	@(posedge clk) bvalid && !bready |=> $stable(awaddr && wdata);
+	endproperty
+	assert property(p3)
+	else
+		`uvm_error("P3","Address and data not stable")*/
+		
+	property p4;
+	@(posedge clk) WVALID && !WREADY |=>$stable(WSTRB);
+	endproperty
+	assert property(p4)
+	else
+		$error ("P2","wstrb not stable");
+		
+	property p5;
+	@(posedge clk) ARVALID && !ARREADY |=>$stable(ARADDR);
+	endproperty
+	assert property(p5)
+	else
+		$error ("P5","read address  not stable");
+		
+	property p6;
+	@(posedge clk) ARVALID && !ARREADY |=>$stable(RDATA);
+	endproperty
+	assert property(p6)
+	else
+		$error ("P6","read data  not stable");
+		
+	property p7;
+	@(posedge clk) BVALID && !BRESP |=>$stable(BRESP);
+	endproperty
+	assert property(p7)
+	else
+		$error("P7","Bresp not stable");
+		
+	property p8;
+	@(posedge clk )ARVALID && ARREADY |->##[0:$] RVALID;
+	endproperty
+	assert property (p8)
+	else
+		$error("P8","rvalid came before");
 
 endinterface
