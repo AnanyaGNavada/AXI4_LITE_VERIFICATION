@@ -1,0 +1,571 @@
+Command: /fetools/work_area/frontend/Batch_11/ananyaganesh/system_verilog/AXI4_LITE_SLAVE/src/work/simv +UVM_TESTNAME=axi4_lite_test_write +UVM_VERBOSITY=UVM_HIGH +ntb_random_seed=27386 -cm line+cond+fsm+tgl+branch+assert -cm_dir work/regression.vdb -cm_name axi4_lite_test_write_27386 -l work/logs/axi4_lite_test_write_27386.log +UVM_NO_RELNOTES
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Sep 18 14:15 2026
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+UVM_INFO @ 0: reporter [RNTST] Running test axi4_lite_test_write...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+---------------------------------------------------------------
+Name                       Type                     Size  Value
+---------------------------------------------------------------
+uvm_test_top               axi4_lite_test_write     -     @469 
+  env                      axi4_lite_environment    -     @477 
+    aa                     axi4_lite_active_agent   -     @489 
+      drv                  axi4_lite_driver         -     @569 
+        rsp_port           uvm_analysis_port        -     @586 
+        seq_item_port      uvm_seq_item_pull_port   -     @577 
+      inp_mon              axi4_lite_inp_monitor    -     @552 
+        inp_mon_port       uvm_analysis_port        -     @560 
+      seqr                 axi4_lite_seqr           -     @595 
+        rsp_export         uvm_analysis_export      -     @603 
+        seq_item_export    uvm_seq_item_pull_imp    -     @709 
+        arbitration_queue  array                    0     -    
+        lock_queue         array                    0     -    
+        num_last_reqs      integral                 32    'd1  
+        num_last_rsps      integral                 32    'd1  
+    pa                     axi4_lite_passive_agent  -     @497 
+      out_mon              axi4_lite_out_monitor    -     @726 
+        out_mon_port       uvm_analysis_port        -     @734 
+    sb                     axi4_lite_subscriber     -     @531 
+      analysis_imp         uvm_analysis_imp         -     @539 
+    scb                    axi4_lite_scoreboard     -     @505 
+      inp_port             uvm_analysis_imp_in      -     @513 
+      out_port             uvm_analysis_imp_out     -     @522 
+---------------------------------------------------------------
+
+UVM_INFO axi4_lite_subscriber.sv(41) @ 45: uvm_test_top.env.sb [sb] INPUT COVERAGE = 28.12 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 45: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000018 wdata=1993128b wstrb=0100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 65: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 65: uvm_test_top.env.aa.drv [DRV] awaddr = 00000018 wdata = 1993128b wstrb = 4 araddr = 3cdcd520
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 65: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 85: uvm_test_top.env.sb [sb] INPUT COVERAGE = 44.79 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 85: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000030 wdata=e6d162fe wstrb=0110 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 105: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 105: uvm_test_top.env.aa.drv [DRV] awaddr = 00000030 wdata = e6d162fe wstrb = 6 araddr = bae3ffb4
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 105: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 145: uvm_test_top.env.sb [sb] INPUT COVERAGE = 56.25 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 145: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000024 wdata=97437cc4 wstrb=1100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 165: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 165: uvm_test_top.env.aa.drv [DRV] awaddr = 00000024 wdata = 97437cc4 wstrb = c araddr = a6ec245c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 165: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 205: uvm_test_top.env.sb [sb] INPUT COVERAGE = 59.38 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 205: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000008 wdata=17037769 wstrb=0010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 225: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 225: uvm_test_top.env.aa.drv [DRV] awaddr = 00000008 wdata = 17037769 wstrb = 2 araddr = e5e64c70
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 225: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 265: uvm_test_top.env.sb [sb] INPUT COVERAGE = 70.83 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 265: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000034 wdata=2bc74fbc wstrb=1000 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 285: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 285: uvm_test_top.env.aa.drv [DRV] awaddr = 00000034 wdata = 2bc74fbc wstrb = 8 araddr = afe5376c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 285: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 325: uvm_test_top.env.sb [sb] INPUT COVERAGE = 70.83 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 325: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000034 wdata=78572469 wstrb=0101 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 345: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 345: uvm_test_top.env.aa.drv [DRV] awaddr = 00000034 wdata = 78572469 wstrb = 5 araddr = 00d96a14
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 345: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 375: uvm_test_top.env.sb [sb] INPUT COVERAGE = 73.96 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 375: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000000c wdata=99be4ca3 wstrb=0000 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 395: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 395: uvm_test_top.env.aa.drv [DRV] awaddr = 0000000c wdata = 99be4ca3 wstrb = 0 araddr = 5e929ce8
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 395: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 415: uvm_test_top.env.sb [sb] INPUT COVERAGE = 73.96 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 415: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000028 wdata=a567dc0c wstrb=0110 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 435: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 435: uvm_test_top.env.aa.drv [DRV] awaddr = 00000028 wdata = a567dc0c wstrb = 6 araddr = d4200504
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 435: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 485: uvm_test_top.env.sb [sb] INPUT COVERAGE = 73.96 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 485: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=1973d99f wstrb=1010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 505: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 505: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = 1973d99f wstrb = a araddr = de67b28c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 505: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 555: uvm_test_top.env.sb [sb] INPUT COVERAGE = 73.96 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 555: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000010 wdata=2781f622 wstrb=0010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 575: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 575: uvm_test_top.env.aa.drv [DRV] awaddr = 00000010 wdata = 2781f622 wstrb = 2 araddr = bbed06cc
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 575: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 615: uvm_test_top.env.sb [sb] INPUT COVERAGE = 73.96 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 615: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000001c wdata=e52c581d wstrb=1101 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 635: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 635: uvm_test_top.env.aa.drv [DRV] awaddr = 0000001c wdata = e52c581d wstrb = d araddr = 54c78994
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 635: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 685: uvm_test_top.env.sb [sb] INPUT COVERAGE = 73.96 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 685: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=f7008ee6 wstrb=0101 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 705: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 705: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = f7008ee6 wstrb = 5 araddr = 63f18480
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 705: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 755: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 755: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000014 wdata=42c135fd wstrb=0001 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 775: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 775: uvm_test_top.env.aa.drv [DRV] awaddr = 00000014 wdata = 42c135fd wstrb = 1 araddr = 7ea83d88
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 775: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 795: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 795: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000034 wdata=67fe24bf wstrb=1101 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 815: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 815: uvm_test_top.env.aa.drv [DRV] awaddr = 00000034 wdata = 67fe24bf wstrb = d araddr = d6d1b640
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 815: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 855: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 855: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000001c wdata=bfecb4eb wstrb=0111 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 875: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 875: uvm_test_top.env.aa.drv [DRV] awaddr = 0000001c wdata = bfecb4eb wstrb = 7 araddr = 48d8ab5c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 875: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 915: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 915: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=22b9e184 wstrb=0001 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 935: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 935: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = 22b9e184 wstrb = 1 araddr = 2a668800
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 935: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 975: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 975: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=e24d8fa7 wstrb=0000 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 995: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 995: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = e24d8fa7 wstrb = 0 araddr = 5149bc7c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 995: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1045: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1045: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000004 wdata=2081d30e wstrb=1001 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1065: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1065: uvm_test_top.env.aa.drv [DRV] awaddr = 00000004 wdata = 2081d30e wstrb = 9 araddr = 7f9b43b4
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1065: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1085: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1085: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000000 wdata=09df1a77 wstrb=0111 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1105: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1105: uvm_test_top.env.aa.drv [DRV] awaddr = 00000000 wdata = 09df1a77 wstrb = 7 araddr = c830cf7c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1105: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1155: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1155: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000000c wdata=d682ce80 wstrb=1110 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1175: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1175: uvm_test_top.env.aa.drv [DRV] awaddr = 0000000c wdata = d682ce80 wstrb = e araddr = aa5ee0f0
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1175: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1215: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1215: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000000c wdata=c52806d2 wstrb=0000 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1235: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1235: uvm_test_top.env.aa.drv [DRV] awaddr = 0000000c wdata = c52806d2 wstrb = 0 araddr = 247b4024
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1235: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1275: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1275: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000020 wdata=c6a5d9f6 wstrb=0000 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1295: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1295: uvm_test_top.env.aa.drv [DRV] awaddr = 00000020 wdata = c6a5d9f6 wstrb = 0 araddr = 3bdad880
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1295: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1335: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1335: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000008 wdata=be65fa7d wstrb=0110 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1355: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1355: uvm_test_top.env.aa.drv [DRV] awaddr = 00000008 wdata = be65fa7d wstrb = 6 araddr = a8ddbf28
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1355: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1405: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1405: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000000c wdata=71eb2ed0 wstrb=0101 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1425: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1425: uvm_test_top.env.aa.drv [DRV] awaddr = 0000000c wdata = 71eb2ed0 wstrb = 5 araddr = 1d0fa6b8
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1425: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1455: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1455: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=978ccfde wstrb=1100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1475: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1475: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = 978ccfde wstrb = c araddr = cb06c368
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1475: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1495: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1495: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000010 wdata=87d77e47 wstrb=0010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1515: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1515: uvm_test_top.env.aa.drv [DRV] awaddr = 00000010 wdata = 87d77e47 wstrb = 2 araddr = b4ae24ec
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1515: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1565: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1565: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000030 wdata=1e41bb9f wstrb=0001 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1585: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1585: uvm_test_top.env.aa.drv [DRV] awaddr = 00000030 wdata = 1e41bb9f wstrb = 1 araddr = 9e0ca664
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1585: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1625: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1625: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000014 wdata=0c3acc9a wstrb=1000 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1645: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1645: uvm_test_top.env.aa.drv [DRV] awaddr = 00000014 wdata = 0c3acc9a wstrb = 8 araddr = 2b18d1f8
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1645: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1695: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1695: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000000 wdata=91c10156 wstrb=1100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1715: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1715: uvm_test_top.env.aa.drv [DRV] awaddr = 00000000 wdata = 91c10156 wstrb = c araddr = aec4e2e0
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1715: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1755: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1755: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000018 wdata=741c76f4 wstrb=1010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1775: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1775: uvm_test_top.env.aa.drv [DRV] awaddr = 00000018 wdata = 741c76f4 wstrb = a araddr = 085b3b58
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1775: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1795: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1795: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000020 wdata=2b3c5a6f wstrb=1110 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1815: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1815: uvm_test_top.env.aa.drv [DRV] awaddr = 00000020 wdata = 2b3c5a6f wstrb = e araddr = 86476e14
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1815: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1845: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1845: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000000 wdata=48e1c61d wstrb=0100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1865: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1865: uvm_test_top.env.aa.drv [DRV] awaddr = 00000000 wdata = 48e1c61d wstrb = 4 araddr = f8571248
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1865: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1905: uvm_test_top.env.sb [sb] INPUT COVERAGE = 77.08 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1905: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=2522a102 wstrb=0000 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1925: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1925: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = 2522a102 wstrb = 0 araddr = 43e5b89c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1925: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 1965: uvm_test_top.env.sb [sb] INPUT COVERAGE = 80.21 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 1965: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000000c wdata=d607266b wstrb=1111 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 1985: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 1985: uvm_test_top.env.aa.drv [DRV] awaddr = 0000000c wdata = d607266b wstrb = f araddr = 3f49152c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 1985: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2035: uvm_test_top.env.sb [sb] INPUT COVERAGE = 80.21 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2035: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000004 wdata=8fc0508f wstrb=0100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2055: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2055: uvm_test_top.env.aa.drv [DRV] awaddr = 00000004 wdata = 8fc0508f wstrb = 4 araddr = 6b7cc180
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2055: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2075: uvm_test_top.env.sb [sb] INPUT COVERAGE = 80.21 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2075: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000020 wdata=5804806b wstrb=0100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2095: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2095: uvm_test_top.env.aa.drv [DRV] awaddr = 00000020 wdata = 5804806b wstrb = 4 araddr = 7b82e028
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2095: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2135: uvm_test_top.env.sb [sb] INPUT COVERAGE = 80.21 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2135: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=3b77f1d8 wstrb=1010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2155: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2155: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = 3b77f1d8 wstrb = a araddr = adc24e78
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2155: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2185: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2185: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000018 wdata=fe0df5f3 wstrb=0011 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2205: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2205: uvm_test_top.env.aa.drv [DRV] awaddr = 00000018 wdata = fe0df5f3 wstrb = 3 araddr = 20f3d388
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2205: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2235: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2235: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000002c wdata=b3c1d473 wstrb=1000 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2255: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2255: uvm_test_top.env.aa.drv [DRV] awaddr = 0000002c wdata = b3c1d473 wstrb = 8 araddr = a15fde74
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2255: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2295: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2295: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000002c wdata=1946cb4f wstrb=1010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2315: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2315: uvm_test_top.env.aa.drv [DRV] awaddr = 0000002c wdata = 1946cb4f wstrb = a araddr = 01bb52cc
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2315: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2365: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2365: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=a4b424c7 wstrb=1100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2385: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2385: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = a4b424c7 wstrb = c araddr = ca3ba084
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2385: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2435: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2435: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000028 wdata=6b2617e3 wstrb=0011 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2455: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2455: uvm_test_top.env.aa.drv [DRV] awaddr = 00000028 wdata = 6b2617e3 wstrb = 3 araddr = c9002ec8
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2455: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2485: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2485: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000018 wdata=8e53c581 wstrb=1001 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2505: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2505: uvm_test_top.env.aa.drv [DRV] awaddr = 00000018 wdata = 8e53c581 wstrb = 9 araddr = e2b00c84
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2505: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2535: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2535: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000018 wdata=83dad448 wstrb=1011 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2555: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2555: uvm_test_top.env.aa.drv [DRV] awaddr = 00000018 wdata = 83dad448 wstrb = b araddr = 4dc0f01c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2555: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2595: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2595: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000000 wdata=0d2aaf9e wstrb=0111 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2615: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2615: uvm_test_top.env.aa.drv [DRV] awaddr = 00000000 wdata = 0d2aaf9e wstrb = 7 araddr = 551ea350
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2615: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2665: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2665: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000020 wdata=130b9517 wstrb=1110 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2685: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2685: uvm_test_top.env.aa.drv [DRV] awaddr = 00000020 wdata = 130b9517 wstrb = e araddr = 88cbd478
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2685: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2715: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2715: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=c3e73312 wstrb=1100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2735: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2735: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = c3e73312 wstrb = c araddr = c851694c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2735: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2785: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2785: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000030 wdata=de3004c5 wstrb=1001 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2805: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2805: uvm_test_top.env.aa.drv [DRV] awaddr = 00000030 wdata = de3004c5 wstrb = 9 araddr = a0df2064
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2805: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2855: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2855: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000000c wdata=a304aa58 wstrb=1000 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2875: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2875: uvm_test_top.env.aa.drv [DRV] awaddr = 0000000c wdata = a304aa58 wstrb = 8 araddr = d5a37cec
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2875: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2905: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2905: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000004 wdata=f7faae1f wstrb=0111 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2925: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2925: uvm_test_top.env.aa.drv [DRV] awaddr = 00000004 wdata = f7faae1f wstrb = 7 araddr = fc57a1fc
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2925: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 2965: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 2965: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000001c wdata=e01bc252 wstrb=0101 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 2985: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 2985: uvm_test_top.env.aa.drv [DRV] awaddr = 0000001c wdata = e01bc252 wstrb = 5 araddr = aa77be60
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 2985: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3005: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3005: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000002c wdata=41f7cca9 wstrb=0100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3025: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3025: uvm_test_top.env.aa.drv [DRV] awaddr = 0000002c wdata = 41f7cca9 wstrb = 4 araddr = 2c25d174
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3025: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3065: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3065: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000008 wdata=cedbd0ec wstrb=1010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3085: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3085: uvm_test_top.env.aa.drv [DRV] awaddr = 00000008 wdata = cedbd0ec wstrb = a araddr = 5d59112c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3085: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3125: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3125: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000008 wdata=76494dd0 wstrb=0001 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3145: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3145: uvm_test_top.env.aa.drv [DRV] awaddr = 00000008 wdata = 76494dd0 wstrb = 1 araddr = 20625d88
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3145: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3165: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3165: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000008 wdata=69be5f18 wstrb=0110 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3185: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3185: uvm_test_top.env.aa.drv [DRV] awaddr = 00000008 wdata = 69be5f18 wstrb = 6 araddr = 17aff3f4
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3185: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3225: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3225: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000010 wdata=93fd3af4 wstrb=0010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3245: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3245: uvm_test_top.env.aa.drv [DRV] awaddr = 00000010 wdata = 93fd3af4 wstrb = 2 araddr = 49be7d4c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3245: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3265: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3265: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000001c wdata=0628a52f wstrb=1010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3285: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3285: uvm_test_top.env.aa.drv [DRV] awaddr = 0000001c wdata = 0628a52f wstrb = a araddr = ab0fe9fc
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3285: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3305: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3305: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=c2386990 wstrb=0011 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3325: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3325: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = c2386990 wstrb = 3 araddr = ff3b1140
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3325: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3355: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3355: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000008 wdata=1d2feacc wstrb=0010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3375: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3375: uvm_test_top.env.aa.drv [DRV] awaddr = 00000008 wdata = 1d2feacc wstrb = 2 araddr = 7255170c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3375: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3405: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3405: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000002c wdata=68f59c06 wstrb=0010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3425: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3425: uvm_test_top.env.aa.drv [DRV] awaddr = 0000002c wdata = 68f59c06 wstrb = 2 araddr = f5f465c8
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3425: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3475: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3475: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000034 wdata=fe737a33 wstrb=0001 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3495: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3495: uvm_test_top.env.aa.drv [DRV] awaddr = 00000034 wdata = fe737a33 wstrb = 1 araddr = 66a64e84
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3495: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3545: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3545: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000001c wdata=3b965d21 wstrb=1101 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3565: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3565: uvm_test_top.env.aa.drv [DRV] awaddr = 0000001c wdata = 3b965d21 wstrb = d araddr = f92b01cc
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3565: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3605: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3605: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000001c wdata=2cddbe11 wstrb=1101 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3625: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3625: uvm_test_top.env.aa.drv [DRV] awaddr = 0000001c wdata = 2cddbe11 wstrb = d araddr = adcbdfac
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3625: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3645: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3645: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000008 wdata=ce1b52d6 wstrb=0110 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3665: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3665: uvm_test_top.env.aa.drv [DRV] awaddr = 00000008 wdata = ce1b52d6 wstrb = 6 araddr = bcd8e984
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3665: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3685: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3685: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000020 wdata=8438c9ff wstrb=1101 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3705: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3705: uvm_test_top.env.aa.drv [DRV] awaddr = 00000020 wdata = 8438c9ff wstrb = d araddr = 46c3503c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3705: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3735: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3735: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000024 wdata=91930807 wstrb=1010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3755: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3755: uvm_test_top.env.aa.drv [DRV] awaddr = 00000024 wdata = 91930807 wstrb = a araddr = c3cb4bd4
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3755: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3775: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3775: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000020 wdata=a29785d6 wstrb=1011 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3795: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3795: uvm_test_top.env.aa.drv [DRV] awaddr = 00000020 wdata = a29785d6 wstrb = b araddr = 6a634120
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3795: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3835: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3835: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000008 wdata=1cbf8deb wstrb=1111 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3855: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3855: uvm_test_top.env.aa.drv [DRV] awaddr = 00000008 wdata = 1cbf8deb wstrb = f araddr = a214e84c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3855: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3905: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3905: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=eae4bd76 wstrb=0001 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3925: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3925: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = eae4bd76 wstrb = 1 araddr = 37111814
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3925: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3955: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3955: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=90d1f5df wstrb=1011 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 3975: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 3975: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = 90d1f5df wstrb = b araddr = cc4fd104
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 3975: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 3995: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 3995: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000018 wdata=09cc6de3 wstrb=1111 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4015: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4015: uvm_test_top.env.aa.drv [DRV] awaddr = 00000018 wdata = 09cc6de3 wstrb = f araddr = 5168e774
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4015: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4055: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4055: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000010 wdata=4b8f3b0f wstrb=0100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4075: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4075: uvm_test_top.env.aa.drv [DRV] awaddr = 00000010 wdata = 4b8f3b0f wstrb = 4 araddr = 47469950
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4075: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4105: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4105: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000030 wdata=30f2c094 wstrb=0111 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4125: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4125: uvm_test_top.env.aa.drv [DRV] awaddr = 00000030 wdata = 30f2c094 wstrb = 7 araddr = 7b8f7810
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4125: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4145: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4145: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=970eb1d0 wstrb=0101 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4165: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4165: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = 970eb1d0 wstrb = 5 araddr = 3ccaeecc
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4165: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4215: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4215: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000000 wdata=d3e0f92b wstrb=0000 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4235: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4235: uvm_test_top.env.aa.drv [DRV] awaddr = 00000000 wdata = d3e0f92b wstrb = 0 araddr = 0cb31dd8
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4235: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4265: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4265: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=89c39d61 wstrb=0110 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4285: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4285: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = 89c39d61 wstrb = 6 araddr = 86306b2c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4285: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4335: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4335: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000002c wdata=5937e049 wstrb=1101 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4355: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4355: uvm_test_top.env.aa.drv [DRV] awaddr = 0000002c wdata = 5937e049 wstrb = d araddr = 03356f3c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4355: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4405: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4405: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000008 wdata=1e51bc22 wstrb=0011 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4425: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4425: uvm_test_top.env.aa.drv [DRV] awaddr = 00000008 wdata = 1e51bc22 wstrb = 3 araddr = bce585b0
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4425: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4465: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4465: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=639a428e wstrb=0100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4485: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4485: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = 639a428e wstrb = 4 araddr = 7e8a9730
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4485: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4535: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4535: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=a0691d85 wstrb=0000 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4555: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4555: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = a0691d85 wstrb = 0 araddr = 3df28898
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4555: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4585: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4585: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000038 wdata=6811a3df wstrb=1000 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4605: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4605: uvm_test_top.env.aa.drv [DRV] awaddr = 00000038 wdata = 6811a3df wstrb = 8 araddr = 6d925c70
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4605: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4635: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4635: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000001c wdata=b116f52f wstrb=0100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4655: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4655: uvm_test_top.env.aa.drv [DRV] awaddr = 0000001c wdata = b116f52f wstrb = 4 araddr = 06e0a928
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4655: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4685: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4685: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000001c wdata=4eb15482 wstrb=1110 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4705: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4705: uvm_test_top.env.aa.drv [DRV] awaddr = 0000001c wdata = 4eb15482 wstrb = e araddr = 47ddd440
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4705: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4735: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4735: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000020 wdata=e9840fe3 wstrb=1001 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4755: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4755: uvm_test_top.env.aa.drv [DRV] awaddr = 00000020 wdata = e9840fe3 wstrb = 9 araddr = 9add41e8
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4755: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4795: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4795: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000018 wdata=a6ba9810 wstrb=1111 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4815: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4815: uvm_test_top.env.aa.drv [DRV] awaddr = 00000018 wdata = a6ba9810 wstrb = f araddr = 6166ff54
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4815: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4865: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4865: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000010 wdata=93b1e361 wstrb=0111 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4885: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4885: uvm_test_top.env.aa.drv [DRV] awaddr = 00000010 wdata = 93b1e361 wstrb = 7 araddr = 4122d080
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4885: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4915: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4915: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000030 wdata=174895f7 wstrb=1010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 4935: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 4935: uvm_test_top.env.aa.drv [DRV] awaddr = 00000030 wdata = 174895f7 wstrb = a araddr = 1223a4dc
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 4935: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 4985: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 4985: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000010 wdata=a85ee686 wstrb=0101 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 5005: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 5005: uvm_test_top.env.aa.drv [DRV] awaddr = 00000010 wdata = a85ee686 wstrb = 5 araddr = 8112698c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 5005: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 5025: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 5025: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000008 wdata=5e066ed1 wstrb=0110 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 5045: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 5045: uvm_test_top.env.aa.drv [DRV] awaddr = 00000008 wdata = 5e066ed1 wstrb = 6 araddr = e5dd94a8
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 5045: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 5095: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 5095: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000004 wdata=35917595 wstrb=0110 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 5115: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 5115: uvm_test_top.env.aa.drv [DRV] awaddr = 00000004 wdata = 35917595 wstrb = 6 araddr = 086de888
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 5115: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 5155: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 5155: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000002c wdata=62f55368 wstrb=0100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 5175: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 5175: uvm_test_top.env.aa.drv [DRV] awaddr = 0000002c wdata = 62f55368 wstrb = 4 araddr = 3d5b8ea0
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 5175: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 5215: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 5215: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000028 wdata=5184b51b wstrb=1010 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 5235: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 5235: uvm_test_top.env.aa.drv [DRV] awaddr = 00000028 wdata = 5184b51b wstrb = a araddr = a4a31068
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 5235: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 5275: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 5275: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000018 wdata=c2c882b4 wstrb=1011 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 5295: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 5295: uvm_test_top.env.aa.drv [DRV] awaddr = 00000018 wdata = c2c882b4 wstrb = b araddr = 38339408
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 5295: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 5335: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 5335: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000034 wdata=f742d49d wstrb=0110 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 5355: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 5355: uvm_test_top.env.aa.drv [DRV] awaddr = 00000034 wdata = f742d49d wstrb = 6 araddr = 1953beb4
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 5355: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 5395: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 5395: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000008 wdata=f7ad4be7 wstrb=0001 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 5415: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 5415: uvm_test_top.env.aa.drv [DRV] awaddr = 00000008 wdata = f7ad4be7 wstrb = 1 araddr = 74fe771c
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 5415: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 5445: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 5445: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=0000001c wdata=de03e4ef wstrb=0100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 5465: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 5465: uvm_test_top.env.aa.drv [DRV] awaddr = 0000001c wdata = de03e4ef wstrb = 4 araddr = 1aafa5a0
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 5465: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 5485: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 5485: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000030 wdata=e3db9cea wstrb=0110 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 5505: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 2 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 5505: uvm_test_top.env.aa.drv [DRV] awaddr = 00000030 wdata = e3db9cea wstrb = 6 araddr = 8aec3030
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 5505: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 2 actual_bresp=2 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 5555: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 5555: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000004 wdata=27d33f30 wstrb=1101 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 5575: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 5575: uvm_test_top.env.aa.drv [DRV] awaddr = 00000004 wdata = 27d33f30 wstrb = d araddr = e8abbcac
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 5575: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 5605: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 5605: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000024 wdata=df85d0c1 wstrb=1001 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 5625: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 5625: uvm_test_top.env.aa.drv [DRV] awaddr = 00000024 wdata = df85d0c1 wstrb = 9 araddr = 288223c8
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 5625: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_subscriber.sv(41) @ 5665: uvm_test_top.env.sb [sb] INPUT COVERAGE = 83.33 %
+UVM_INFO axi4_lite_inp_monitor.sv(44) @ 5665: uvm_test_top.env.aa.inp_mon [INPUT MONITOR]  WRITE awaddr=00000004 wdata=61b12e1b wstrb=0100 
+UVM_INFO axi4_lite_out_monitor.sv(28) @ 5685: uvm_test_top.env.pa.out_mon [OUTPUT MONITOR] BRESP = 0 RRESP = 0 RDATA = 00000000
+UVM_INFO axi4_lite_driver.sv(34) @ 5685: uvm_test_top.env.aa.drv [DRV] awaddr = 00000004 wdata = 61b12e1b wstrb = 4 araddr = 2c46d968
+UVM_INFO axi4_lite_scoreboard.sv(52) @ 5685: uvm_test_top.env.scb [BRESP] Matched : exp_bresp= 0 actual_bresp=0 write = 1 read = 0
+UVM_INFO axi4_lite_test.sv(27) @ 5685: uvm_test_top [TEST] Write completed
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm/base/uvm_objection.svh(1274) @ 5685: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  504
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[BRESP]   100
+[DRV]   100
+[INPUT MONITOR]   100
+[OUTPUT MONITOR]   100
+[RNTST]     1
+[TEST]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[sb]   100
+$finish called from file "/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm/base/uvm_root.svh", line 437.
+$finish at simulation time                 5685
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 5685 ns
+CPU Time:      0.590 seconds;       Data structure size:   0.4Mb
+Fri Sep 18 14:15:29 2026

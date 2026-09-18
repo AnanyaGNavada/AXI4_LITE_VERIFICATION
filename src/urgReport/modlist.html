@@ -64,23 +64,24 @@ function collapseAll() {
 <body><div class="ui-layout-north">
 <div class="logo"></div>
 <center class="pagetitle">Design Module List</center>
-<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
 
 </div>
 <div class="ui-layout-center">
 <b>Total Module Definition Coverage Summary</b>&nbsp;<br clear=all>
 <table align=left>
 <tr class="sortablehead">
-<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>COND</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>FSM</td><td nowrap width=65>BRANCH</td></tr><tr>
-<td class="s8 cl rt"> 86.80</td>
+<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>COND</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>FSM</td><td nowrap width=65>BRANCH</td><td nowrap width=65>ASSERT</td></tr><tr>
+<td class="s8 cl rt"> 87.42</td>
 <td class="s9 cl rt"> 97.76</td>
 <td class="s7 cl rt"> 79.00</td>
 <td class="s9 cl rt"> 99.33</td>
 <td class="s7 cl rt"> 70.00</td>
 <td class="s8 cl rt"> 87.93</td>
+<td class="s9 cl rt"> 90.48</td>
 </tr></table><br clear=all>
 <br clear=all>
-Total modules in report: 3<hr>
+Total modules in report: 5<hr>
 <table class="noborder">
   <tr>
     <td class="noborder"><input type="button" value="Expand All" onClick="expandAll()"></td>
@@ -90,11 +91,22 @@ Total modules in report: 3<hr>
 <table id="hierarchyTable" border="0" cellpadding="0" cellspacing="0" class="sortable">
   <thead class="table-header">
     <tr>
-<th class="alfsrt">NAME</th><th>SCORE</th><th>LINE</th><th>COND</th><th>TOGGLE</th><th>FSM</th><th>BRANCH</th>    </tr>
+<th class="alfsrt">NAME</th><th>SCORE</th><th>LINE</th><th>COND</th><th>TOGGLE</th><th>FSM</th><th>BRANCH</th><th>ASSERT</th>    </tr>
   </thead>
   <tbody>
     <tr data-tt-id="hierarchyTable_root">
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td>    </tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>    </tr>
+    <tr data-tt-id="mod_0" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_uvm_pkg"></a>
+<a href="mod0.html" >uvm_pkg</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod0.html#Assert" >  0.00</a></td>
+    </tr>
     <tr data-tt-id="mod_1" data-tt-parent-id="hierarchyTable_root">
 <td class="wordwrap"><a name="tag_axi4_lite_slave"></a>
 <a href="mod1.html" >axi4_lite_slave</a></td>
@@ -104,6 +116,7 @@ Total modules in report: 3<hr>
 <td class="s9 cl rt"><a href="mod1.html#Toggle" > 98.97</a></td>
 <td class="s7 cl rt"><a href="mod1.html#FSM" > 70.00</a></td>
 <td class="s8 cl rt"><a href="mod1.html#Branch" > 87.93</a></td>
+<td class="wht cl rt"></td>
     </tr>
     <tr data-tt-id="mod_2" data-tt-parent-id="hierarchyTable_root">
 <td class="wordwrap"><a name="tag_axi4_lite_interface"></a>
@@ -114,6 +127,7 @@ Total modules in report: 3<hr>
 <td class="s10 cl rt"><a href="mod2.html#Toggle" >100.00</a></td>
 <td class="wht cl rt"></td>
 <td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod2.html#Assert" >100.00</a></td>
     </tr>
     <tr data-tt-id="mod_3" data-tt-parent-id="hierarchyTable_root">
 <td class="wordwrap"><a name="tag_axi4_lite_top"></a>
@@ -124,6 +138,18 @@ Total modules in report: 3<hr>
 <td class="s10 cl rt"><a href="mod3.html#Toggle" >100.00</a></td>
 <td class="wht cl rt"></td>
 <td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_4" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_axi4_lite_pkgs"></a>
+<a href="mod4.html" >axi4_lite_pkgs</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod4.html#Assert" >100.00</a></td>
     </tr>
   </tbody>
 </table>

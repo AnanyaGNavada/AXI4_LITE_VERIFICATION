@@ -1,0 +1,4 @@
+axi4_lite_test_write 14567 PASS
+axi4_lite_test_write 19273 PASS
+axi4_lite_test_write 25179 PASS
+axi4_lite_test_read 25439 FAIL

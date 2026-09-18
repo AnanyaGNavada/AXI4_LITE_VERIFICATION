@@ -1349,5 +1349,5 @@ fFgpEdgeSanity                     	0
 fHsimCongruencyConfigFile          	0
 fHsimCongruencyLogFile             	0
 fHsimCoverageEnabled               	1
-fHsimCoverageOptions               	279
-fHsimCoverageDir                   	simv.vdb
+fHsimCoverageOptions               	407
+fHsimCoverageDir                   	regression.vdb

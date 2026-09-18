@@ -269,7 +269,7 @@
 0 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/systemverilog/reg/snps_uvm_reg_bank.svh
 0 vcs/vcs_uvm_alt.sv
 0 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/systemverilog/vcs/vcs_uvm_alt.sv
-36
+38
 +define+UVM_DIRECTC_OPTS
 +incdir+/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm
 +incdir+/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm/
@@ -292,6 +292,7 @@
 -Mxllcflags=
 -P
 -cm
+-cm_dir
 -full64
 -gen_obj
 -ntb_opts
@@ -302,11 +303,12 @@
 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/bin/vcs1
 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm/uvm_pkg.sv
 uvm
-line+cond+fsm+tgl+branch
+line+cond+fsm+tgl+branch+assert
+regression.vdb
 simv
 axi4_lite_top.sv
 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/vcsdstub.tab
-54
+57
 XDG_MENU_PREFIX=xfce-
 XDG_DATA_DIRS=/home/ananyaganesh/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/usr/share
 XDG_CURRENT_DESKTOP=XFCE
@@ -346,6 +348,9 @@ OVA_UUM=0
 OSTYPE=linux
 MTI_HOME=/tools/mentor/questasim/questasim/
 MGLS_HOME=/tools/mentor/questasim/questasim/linux/mgls
+MFLAGS=
+MAKELEVEL=1
+MAKEFLAGS=
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 LC_ALL=C
 ICC_HOME=/fetools/synopsys/installed_tools/icc2/Q-2019.12-SP1
@@ -365,16 +370,16 @@ COLORTERM=truecolor
 155
 1788148159 axi4_lite_slave.v
 1789464722 axi4_lite_interface.sv
-1789552330 axi4_lite_test.sv
+1789723969 axi4_lite_test.sv
 1789294212 axi4_lite_environment.sv
-1789548503 axi4_lite_subscriber.sv
+1789556753 axi4_lite_subscriber.sv
 1789294385 axi4_lite_scoreboard.sv
 1789294303 axi4_lite_passive_agent.sv
 1789294157 axi4_lite_active_agent.sv
 1789294290 axi4_lite_out_monitor.sv
 1789294223 axi4_lite_inp_monitor.sv
-1789294174 axi4_lite_driver.sv
-1789552514 axi4_lite_seq.sv
+1789555647 axi4_lite_driver.sv
+1789723584 axi4_lite_seq.sv
 1788149522 axi4_lite_seqr.sv
 1789294405 axi4_lite_seq_item.sv
 1789294369 axi4_lite_pkgs.sv
@@ -514,7 +519,7 @@ COLORTERM=truecolor
 1631418289 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm/macros/snps_macros.svp
 1631418289 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm/macros/uvm_version_defines.svh
 1631418293 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm/uvm_macros.svh
-1789534866 axi4_lite_top.sv
+1789728247 axi4_lite_top.sv
 1631418293 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm/uvm_pkg.sv
 1631416236 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/include/cm_vcsd.tab
 1631416234 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/vcsdstub.tab
@@ -525,5 +530,5 @@ COLORTERM=truecolor
 1631416743 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/liberrorinf.so
 1631416702 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libsnpsmalloc.so
 1631416739 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libvfs.so
-1789552533 simv.daidir
+1789728263 simv.daidir
 -1 partitionlib

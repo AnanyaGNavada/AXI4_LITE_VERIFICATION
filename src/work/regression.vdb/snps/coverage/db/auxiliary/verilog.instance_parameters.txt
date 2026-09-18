@@ -1,0 +1,5 @@
+axi4_lite_top.duv.W_ADDR2
+axi4_lite_top.duv.W_BOTH1
+axi4_lite_top.duv.W_DATA3
+axi4_lite_top.duv.W_IDLE0
+axi4_lite_top.duv.W_RESP4

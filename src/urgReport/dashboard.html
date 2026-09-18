@@ -35,23 +35,37 @@ $(document).ready(function () {
 <body><div class="ui-layout-north">
 <div class="logo"></div>
 <center class="pagetitle">Dashboard</center>
-<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
 
 </div>
 <div class="ui-layout-center">
-Date: Wed Sep 16 15:26:02 2026
+Date: Fri Sep 18 16:14:52 2026
 <br clear=all>
 User: ananyaganesh
 <br clear=all>
 Version: Q-2020.03-SP2-8<br clear=all>
-Command line: urg -dir simv.vdb 
+Command line: urg -dir regression.vdb -report urgReport 
 <br clear=all>
-Number of tests: 1<br clear=all>
+Number of tests: 13<br clear=all>
 <hr>
 <b>Total Coverage Summary</b>&nbsp;<br clear=all>
 <table align=left>
 <tr class="sortablehead">
-<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>COND</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>FSM</td><td nowrap width=65>BRANCH</td><td nowrap width=65>GROUP</td></tr><tr>
+<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>COND</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>FSM</td><td nowrap width=65>BRANCH</td><td nowrap width=65>ASSERT</td><td nowrap width=65>GROUP</td></tr><tr>
+<td class="s9 cl rt"> 90.57</td>
+<td class="s9 cl rt"> 97.76</td>
+<td class="s7 cl rt"> 79.00</td>
+<td class="s9 cl rt"> 99.33</td>
+<td class="s7 cl rt"> 70.00</td>
+<td class="s8 cl rt"> 87.93</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+</tr></table><br clear=all>
+<hr>
+<b>Hierarchical coverage data for top-level instances</b>&nbsp;<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>COND</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>FSM</td><td nowrap width=65>BRANCH</td><td nowrap width=65>ASSERT</td><td class="alfsrt">NAME</td></tr><tr>
 <td class="s8 cl rt"> 89.00</td>
 <td class="s9 cl rt"> 97.76</td>
 <td class="s7 cl rt"> 79.00</td>
@@ -59,31 +73,20 @@ Number of tests: 1<br clear=all>
 <td class="s7 cl rt"> 70.00</td>
 <td class="s8 cl rt"> 87.93</td>
 <td class="s10 cl rt">100.00</td>
-</tr></table><br clear=all>
-<hr>
-<b>Hierarchical coverage data for top-level instances</b>&nbsp;<br clear=all>
-<table align=left>
-<tr class="sortablehead">
-<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>COND</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>FSM</td><td nowrap width=65>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
-<td class="s8 cl rt"> 86.80</td>
-<td class="s9 cl rt"> 97.76</td>
-<td class="s7 cl rt"> 79.00</td>
-<td class="s9 cl rt"> 99.33</td>
-<td class="s7 cl rt"> 70.00</td>
-<td class="s8 cl rt"> 87.93</td>
 <td class="wordwrap"><a href="mod3.html#inst_tag_3" >axi4_lite_top</a></td>
 </tr></table><br clear=all>
 <hr>
 <b>Total Module Definition Coverage Summary</b>&nbsp;<br clear=all>
 <table align=left>
 <tr class="sortablehead">
-<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>COND</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>FSM</td><td nowrap width=65>BRANCH</td></tr><tr>
-<td class="s8 cl rt"> 86.80</td>
+<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>COND</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>FSM</td><td nowrap width=65>BRANCH</td><td nowrap width=65>ASSERT</td></tr><tr>
+<td class="s8 cl rt"> 87.42</td>
 <td class="s9 cl rt"> 97.76</td>
 <td class="s7 cl rt"> 79.00</td>
 <td class="s9 cl rt"> 99.33</td>
 <td class="s7 cl rt"> 70.00</td>
 <td class="s8 cl rt"> 87.93</td>
+<td class="s9 cl rt"> 90.48</td>
 </tr></table><br clear=all>
 <hr>
 <b>Total Groups Coverage Summary</b>&nbsp;<br clear=all>

@@ -48,7 +48,7 @@ $(document).ready(function () {
 <body onLoad="initPage();"><div class="ui-layout-north">
 <div class="logo"></div>
 <center class="pagetitle">Module Definition</center>
-<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
 
 </div>
 <div class="ui-layout-west">
@@ -59,13 +59,14 @@ $(document).ready(function () {
 <br clear=all>
 <table align=left>
 <tr class="sortablehead">
-<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
 <td class="s10 cl rt">100.00</td>
 <td class="wht cl rt"></td>
 <td class="wht cl rt"></td>
 <td class="s10 cl rt"><a href="mod2.html#Toggle" >100.00</a></td>
 <td class="wht cl rt"></td>
 <td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod2.html#Assert" >100.00</a></td>
 </tr></table><br clear=all>
 <span class=repname>Source File(s) : </span>
 <br clear=all>
@@ -75,7 +76,7 @@ $(document).ready(function () {
 <br clear=all>
 <table align=left>
 <tr class="sortablehead">
-<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
 <td class="wht cl wordwrap"><a href="mod2.html#inst_tag_2"  onclick="showContent('inst_tag_2')">axi4_lite_top.vif</a></td>
 <td class="s10 cl rt">100.00</td>
 <td class="wht cl rt"></td>
@@ -83,6 +84,7 @@ $(document).ready(function () {
 <td class="s10 cl rt"><a href="mod2.html#Toggle" >100.00</a></td>
 <td class="wht cl rt"></td>
 <td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod2.html#Assert" >100.00</a></td>
 </tr></table></div>
 </div>
 <br clear=all>
@@ -98,37 +100,40 @@ $(document).ready(function () {
 <br clear=all>
 <table align=left>
 <tr class="sortablehead">
-<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
 <td class="s10 cl rt">100.00</td>
 <td class="wht cl rt"></td>
 <td class="wht cl rt"></td>
 <td class="s10 cl rt"><a href="mod2.html#Toggle" >100.00</a></td>
 <td class="wht cl rt"></td>
 <td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod2.html#Assert" >100.00</a></td>
 </tr></table><br clear=all>
 <br clear=all>
 <span class=repname>Instance's subtree :</span>
 <br clear=all>
 <table align=left>
 <tr class="sortablehead">
-<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
 <td class="s10 cl rt">100.00</td>
 <td class="wht cl rt"></td>
 <td class="wht cl rt"></td>
 <td class="s10 cl rt">100.00</td>
 <td class="wht cl rt"></td>
 <td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
 </tr></table><br clear=all>
 <br clear=all>
 <span class=repname>Parent : </span>
 <br clear=all>
 <table align=left>
 <tr class="sortablehead">
-<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td><td class="alfsrt">NAME</td></tr><tr>
 <td class="s10 cl rt">100.00</td>
 <td class="s10 cl rt">100.00</td>
 <td class="wht cl rt"></td>
 <td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
 <td class="wht cl rt"></td>
 <td class="wht cl rt"></td>
 <td><a href="mod3.html#inst_tag_3" >axi4_lite_top</a></td>
@@ -138,8 +143,8 @@ $(document).ready(function () {
 <br clear=all>
 <table align=left>
 <tr class="sortablehead">
-<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
-<td colspan=7>no children</td>
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td colspan=8>no children</td>
 </tr></table><br clear=all>
 </div>
 </div>
@@ -334,6 +339,98 @@ Toggle Coverage for Module : <a href="mod2.html" >axi4_lite_interface</a><br cle
 <td class="s9 cl">Yes</td>
 <td class="s9 cl">Yes</td>
 </tr></table><br clear=all>
+<hr>
+<a name="Assert"></a>
+Assert Coverage for Module : <a href="mod2.html" >axi4_lite_interface</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Attempted</th><th nowrap width=80>Percent</th><th nowrap width=80>Succeeded/Matched</th><th nowrap width=80>Percent</th></tr><tr>
+<td class="wht cl"><a href="#986633354" >Assertions</a></td>
+<td class="wht cl rt">7</td>
+<td class="s10 cl rt">7</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">7</td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl"><a href="#73976895" >Cover properties</a></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+</tr><tr>
+<td class="wht cl"><a href="#1772150852" >Cover sequences</a></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+</tr><tr>
+<td class="wht cl"><b>Total</b></td>
+<td class="wht cl rt">7</td>
+<td class="s10 cl rt">7</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">7</td>
+<td class="s10 cl rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<br clear=all>
+<a name="986633354"></a>
+<b>Assertion Details</b><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td>Attempts</td><td>Real Successes</td><td>Failures</td><td>Incomplete</td></tr><tr>
+<td class="wht cl"><a name="1596332568"></a>
+unnamed$$_0</td>
+<td class="s9 cl rt">11243</td>
+<td class="s9 cl rt">419</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1245532631"></a>
+unnamed$$_1</td>
+<td class="s9 cl rt">11243</td>
+<td class="s9 cl rt">407</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="894732694"></a>
+unnamed$$_2</td>
+<td class="s9 cl rt">11243</td>
+<td class="s9 cl rt">407</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="543932757"></a>
+unnamed$$_3</td>
+<td class="s9 cl rt">11243</td>
+<td class="s9 cl rt">798</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="193132820"></a>
+unnamed$$_4</td>
+<td class="s9 cl rt">11243</td>
+<td class="s9 cl rt">798</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="157667117"></a>
+unnamed$$_5</td>
+<td class="s9 cl rt">11243</td>
+<td class="s9 cl rt">547</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="508467054"></a>
+unnamed$$_6</td>
+<td class="s9 cl rt">11243</td>
+<td class="s9 cl rt">1000</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr></table><br clear=all>
 </div>
 </div>
 <div class="ui-layout-center-inner-north">
@@ -341,10 +438,14 @@ Toggle Coverage for Module : <a href="mod2.html" >axi4_lite_interface</a><br cle
   <ul name="inst_tag_2">
     <li>
       <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Assert">Assert</a>    </li>
   </ul>
   <ul name="tag_axi4_lite_interface">
     <li>
       <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Assert">Assert</a>    </li>
   </ul>
 </div>
 </div>

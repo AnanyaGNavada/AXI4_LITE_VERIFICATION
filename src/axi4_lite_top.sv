@@ -14,11 +14,11 @@ end
 
 initial begin
     rst = 0;
-    #1;
+    #10;
     rst = 1;
-    #1;
+    #5;
     rst=0;
-    #1;
+    #10;
     rst=1;
 end
 axi4_lite_interface vif(clk,rst);

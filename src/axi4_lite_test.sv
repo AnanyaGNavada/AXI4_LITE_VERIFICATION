@@ -32,11 +32,14 @@ endclass
 class axi4_lite_test_read extends axi4_lite_test;
   `uvm_component_utils(axi4_lite_test_read)
   axi4_lite_seq_read seq;
+  axi4_lite_seq_write seq1;
   function new(string name = "axi4_lite_test_read", uvm_component parent);
     super.new(name, parent);
   endfunction
   task run_phase(uvm_phase phase);
     phase.raise_objection(this);
+      seq1 = axi4_lite_seq_write::type_id::create("seq");
+    seq1.start(env.aa.seqr);
     seq = axi4_lite_seq_read::type_id::create("seq");
     seq.start(env.aa.seqr);
     `uvm_info("TEST", "Read completed", UVM_NONE)
@@ -179,6 +182,7 @@ class axi4_lite_test_data_with_delay_addr extends axi4_lite_test;
     phase.drop_objection(this);
   endtask
 endclass
+
 
 class regression_test extends axi4_lite_test;
  `uvm_component_utils(regression_test)
